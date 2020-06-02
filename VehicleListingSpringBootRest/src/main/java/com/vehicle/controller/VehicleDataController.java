@@ -18,7 +18,7 @@ import com.vehicle.service.VehicleService;
 public class VehicleDataController {
 	@Autowired
 	private VehicleService service;
-
+ 
 	// Save methods
 	@PostMapping(path = "/upload_csv/{dealer_id}", consumes = { "text/css" })
 	public ResponseEntity<VehicleData> setListBycsv(@PathVariable("dealer_id") int dealer_id,
